@@ -66,24 +66,39 @@ class Driver :public Car
     string Get_Driver_Name(void)
     {
         return Driver_name;
-
     }
-}; 
+};
 
+class Grand_Child :public Driver
+{
+    public:
+    int Num_of_members;
+     //set methods 
+    void Set_passengers_Num(int p){
+        Num_of_members=p;
+    }
+    //get methods 
+    int Get_passengers_Num(void)
+    {
+        return Num_of_members;
+    }
+};
 
 
 int main ()
 {
-Driver driver1;
-driver1.Set_Driver_name("gasser");
-driver1.set_name("volvo");
-driver1.set_type("sport");
-driver1.set_year(2024);
+Grand_Child child1;
+child1.Set_Driver_name("gasser");
+child1.set_name("volvo");
+child1.set_type("sport");
+child1.set_year(2024);
+child1.Set_passengers_Num(4);
 
-cout << "the name is "<< driver1.Get_Driver_Name()<<endl;
-cout << "the name is "<< driver1.get_name()<<endl;
-cout << "the type is "<< driver1.get_type()<<endl;
-cout << "the year is "<<driver1.get_year()<<endl;
+cout << "the name is "<< child1.Get_Driver_Name()<<endl;
+cout << "the name is "<< child1.get_name()<<endl;
+cout << "the type is "<< child1.get_type()<<endl;
+cout << "the year is "<<child1.get_year()<<endl;
+cout << "the year is "<<child1.Get_passengers_Num()<<endl;
 
     return 0;
 }
