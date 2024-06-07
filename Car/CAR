@@ -4,20 +4,63 @@ using namespace std;
 
 //create class nemd by car
 class car{
-    //public specifer 
-    public:
+    // attributes
+	private:
 
-    //set methods
-    //get methods
-    
-
+   	string name;
+    string type;
+    int year;
+	public:
+    //set methods 
+    void set_name(string x);
+    void set_type(string y);
+    void set_year(int z);
+    //get_methods
+    string get_name(void);
+    string get_type(void);
+    int get_year(void);
 };
+//implementation 
+
+Car::set_name(string x)
+	{
+		name = x;
+	}
+
+Car::set_type(string y)
+ 	{
+		type = y;  
+	}
+Car::set_name(int z)
+	{
+		year = z;
+	}
+
+string Car::get_name()
+	{
+		return name;
+	}
+ 
+string Car::get_type()
+	{
+		return type;
+	}
+
+string Car::get_year()
+	{
+		return year;
+    }
 
 int main ()
 {
+Car car1;
+car1.set_name("volvo");
+car1.set_type("sport");
+car1.set_year("2024");
 
-
-
+cout << "the name is "<< car1.get_name<<endl;
+cout << "the type is "<< car1.get_type<<endl;
+cout << "the year is"<<car1.get_year<<endl;
 
     return 0;
 }
