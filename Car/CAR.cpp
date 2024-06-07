@@ -59,8 +59,8 @@ car1.set_name("volvo");
 car1.set_type("sport");
 car1.set_year(2024);
 
-cout << "the name is "<< car1.get_name()<<endl;
-cout << "the type is "<< car1.get_type()<<endl;
+cout << "the name of the car is "<< car1.get_name()<<endl;
+cout << "the type of the car is "<< car1.get_type()<<endl;
 cout << "the year is "<<car1.get_year()<<endl;
 
     return 0;

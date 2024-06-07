@@ -94,11 +94,11 @@ child1.set_type("sport");
 child1.set_year(2024);
 child1.Set_passengers_Num(4);
 
-cout << "the name is "<< child1.Get_Driver_Name()<<endl;
-cout << "the name is "<< child1.get_name()<<endl;
-cout << "the type is "<< child1.get_type()<<endl;
+cout << "the name of the driver is "<< child1.Get_Driver_Name()<<endl;
+cout << "the name of the car is "<< child1.get_name()<<endl;
+cout << "the type of the car is "<< child1.get_type()<<endl;
 cout << "the year is "<<child1.get_year()<<endl;
-cout << "the year is "<<child1.Get_passengers_Num()<<endl;
+cout << "the number of passengers is "<<child1.Get_passengers_Num()<<endl;
 
     return 0;
 }
