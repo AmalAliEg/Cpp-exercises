@@ -1,1 +1,2 @@
-# C-exercises
+# Cpp-exercises
+problem solving examples 
